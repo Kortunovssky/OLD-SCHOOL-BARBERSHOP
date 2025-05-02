@@ -3,78 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Old School Barbershop | Классические стрижки и бритьё</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Harly Barbershop — мужские стрижки и бритьё</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">OLD SCHOOL BARBERSHOP</div>
-        <nav>
-            <ul>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">HARLY</a>
+                <ul class="nav-list">
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+                <button class="btn-book">Записаться</button>
+            </nav>
+            <div class="hero">
+                <h1>Мужские стрижки <br> с характером</h1>
+                <p>Профессиональные барберы и атмосфера настоящего мужского клуба</p>
+                <a href="#booking" class="btn-primary">Выбрать мастера</a>
+            </div>
+        </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Классические стрижки и бритьё</h1>
-            <p>Вернем вашему образу мужественность и стиль</p>
-            <a href="#contact" class="btn">Записаться онлайн</a>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <h2>Наши услуги</h2>
-        <div class="service-grid">
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Мужская стрижка">
-                <h3>Мужская стрижка</h3>
-                <p>Профессиональная стрижка с учетом особенностей вашего типа волос и формы лица.</p>
-                <div class="price">1500 руб.</div>
-            </div>
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Бритьё опасной бритвой">
-                <h3>Бритьё опасной бритвой</h3>
-                <p>Классическое бритьё с горячим полотенцем и уходом за кожей.</p>
-                <div class="price">2000 руб.</div>
-            </div>
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Уход за бородой">
-                <h3>Уход за бородой</h3>
-                <p>Стрижка, укладка и питание бороды профессиональными средствами.</p>
-                <div class="price">1200 руб.</div>
+    <section id="services" class="section services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80" alt="Классическая стрижка" loading="lazy">
+                    <h3>Классическая стрижка</h3>
+                    <p>От 1500 ₽</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80" alt="Бритьё опасной бритвой" loading="lazy">
+                    <h3>Бритьё опасной бритвой</h3>
+                    <p>От 2000 ₽</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80" alt="Детская стрижка" loading="lazy">
+                    <h3>Детская стрижка</h3>
+                    <p>От 1200 ₽</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="section about">
         <div class="container">
             <h2>О нас</h2>
-            <p>Old School Barbershop — это место, где сохраняются традиции мужского груминга. Наши мастера с многолетним опытом работают только с качественными инструментами и косметикой. Мы создаем не просто стрижки, а индивидуальный стиль для каждого клиента.</p>
+            <div class="about-content">
+                <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Интерьер барбершопа" loading="lazy">
+                <div class="about-text">
+                    <p>Harly — это место, где создают стиль и уверенность. Наши мастера с опытом от 5 лет работают только с профессиональными инструментами.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <footer class="footer">
         <div class="container">
-            <h2>Контакты</h2>
-            <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Тверская, 18</p>
-            <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
-            <p><i class="fas fa-clock"></i> Пн-Пт: 10:00 - 22:00, Сб-Вс: 11:00 - 20:00</p>
-            <a href="https://wa.me/74951234567" class="btn">Написать в WhatsApp</a>
+            <p>© Harly Barbershop, 2024</p>
+            <div class="social-icons">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="24" loading="lazy"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" loading="lazy"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="WhatsApp" width="24" loading="lazy"></a>
+            </div>
         </div>
-    </section>
-
-    <footer>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-vk"></i></a>
-            <a href="#"><i class="fab fa-telegram"></i></a>
-        </div>
-        <p>&copy; 2023 Old School Barbershop. Все права защищены.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
