@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harly Barbershop — мужские стрижки и бритьё</title>
+    <title>Harly Barbershop — премиум стрижки и бритьё</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
+        <!-- Фоновое видео (альтернатива — изображение) -->
+        <video autoplay muted loop class="header-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-barber-shaving-a-beard-1259-large.mp4" type="video/mp4">
+        </video>
+        <div class="header-overlay"></div>
         <div class="container">
             <nav class="nav">
                 <a href="#" class="logo">HARLY</a>
                 <ul class="nav-list">
                     <li><a href="#services">Услуги</a></li>
-                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
                     <li><a href="#reviews">Отзывы</a></li>
                     <li><a href="#contacts">Контакты</a></li>
                 </ul>
                 <button class="btn-book">Записаться</button>
             </nav>
             <div class="hero">
-                <h1>Мужские стрижки <br> с характером</h1>
-                <p>Профессиональные барберы и атмосфера настоящего мужского клуба</p>
-                <a href="#booking" class="btn-primary">Выбрать мастера</a>
+                <h1>Искусство мужского стиля</h1>
+                <p>Премиальные стрижки и бритьё от мастеров с 10-летним опытом</p>
+                <a href="#booking" class="btn-primary">Записаться онлайн</a>
             </div>
         </div>
     </header>
@@ -33,43 +38,47 @@
             <h2>Наши услуги</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80" alt="Классическая стрижка" loading="lazy">
-                    <h3>Классическая стрижка</h3>
-                    <p>От 1500 ₽</p>
-                </div>
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80" alt="Бритьё опасной бритвой" loading="lazy">
-                    <h3>Бритьё опасной бритвой</h3>
+                    <img src="https://cdn.leonardo.ai/users/1a2b3c4d/post-images/barber-haircut-ai-generative.jpg" alt="Мужская стрижка" loading="lazy">
+                    <h3>Мужская стрижка</h3>
                     <p>От 2000 ₽</p>
                 </div>
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80" alt="Детская стрижка" loading="lazy">
-                    <h3>Детская стрижка</h3>
-                    <p>От 1200 ₽</p>
+                    <img src="https://cdn.leonardo.ai/users/1a2b3c4d/post-images/razor-shave-ai-style.jpg" alt="Бритьё опасной бритвой" loading="lazy">
+                    <h3>Бритьё опасной бритвой</h3>
+                    <p>От 2500 ₽</p>
+                </div>
+                <div class="service-card">
+                    <img src="https://cdn.leonardo.ai/users/1a2b3c4d/post-images/beard-trimming-ai-art.jpg" alt="Коррекция бороды" loading="lazy">
+                    <h3>Коррекция бороды</h3>
+                    <p>От 1500 ₽</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="section about">
+    <section id="gallery" class="section gallery">
         <div class="container">
-            <h2>О нас</h2>
-            <div class="about-content">
-                <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Интерьер барбершопа" loading="lazy">
-                <div class="about-text">
-                    <p>Harly — это место, где создают стиль и уверенность. Наши мастера с опытом от 5 лет работают только с профессиональными инструментами.</p>
-                </div>
+            <h2>Галерея</h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1599351431402-3e8b5b3b3b3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Интерьер барбершопа" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Рабочее место барбера" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Инструменты" loading="lazy">
             </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p>© Harly Barbershop, 2024</p>
-            <div class="social-icons">
-                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="24" loading="lazy"></a>
-                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" loading="lazy"></a>
-                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="WhatsApp" width="24" loading="lazy"></a>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>© Harly Barbershop, 2024</p>
+                    <p>Москва, ул. Барберов, 15</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="24" loading="lazy"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24" loading="lazy"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="WhatsApp" width="24" loading="lazy"></a>
+                </div>
             </div>
         </div>
     </footer>
