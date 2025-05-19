@@ -1,19 +1,23 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Georgia', serif;
+    font-family: 'Montserrat', 'Georgia', serif;
     background: #f7f7f7;
     color: #222;
+    scroll-behavior: smooth;
   }
   
   .pattern-bg {
-    background: url('img/pattern.png');
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
     min-height: 100vh;
   }
   
   .main-header {
     text-align: center;
     padding: 40px 0 20px 0;
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    color: #fff;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
   }
   
   .header-avatars {
@@ -81,23 +85,24 @@ body, html {
     position: relative;
     text-align: center;
     margin-bottom: 40px;
+    background: linear-gradient(120deg, rgba(34,34,34,0.7) 0%, rgba(60,60,60,0.7) 100%), url('https://images.pexels.com/photos/1707828/pexels-photo-1707828.jpeg?auto=compress&w=1200') center/cover no-repeat;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .hero-img {
-    width: 100%;
-    max-height: 350px;
-    object-fit: cover;
-    filter: grayscale(1);
-    opacity: 0.95;
+    display: none;
   }
   .hero-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 2;
+    margin-top: 60px;
   }
   .hero-logo img {
     width: 180px;
     margin-bottom: 20px;
+    filter: drop-shadow(0 4px 16px rgba(0,0,0,0.3));
   }
   .red-btn {
     background: #e74c3c;
@@ -125,6 +130,7 @@ body, html {
   .services {
     text-align: center;
     padding: 40px 0 20px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e8eaf6 100%);
   }
   .services h2 {
     font-size: 1.7em;
@@ -140,8 +146,8 @@ body, html {
   .hex {
     width: 120px;
     height: 104px;
-    background: #222;
-    color: #fff;
+    background: #fff;
+    color: #222;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     display: flex;
     align-items: center;
@@ -149,16 +155,24 @@ body, html {
     font-size: 1em;
     font-weight: bold;
     position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: box-shadow 0.2s, transform 0.2s;
+    background: linear-gradient(120deg, #fff 60%, #e3e3e3 100%);
+  }
+  .hex:hover {
+    box-shadow: 0 6px 24px rgba(231,76,60,0.15);
+    transform: translateY(-4px) scale(1.04);
   }
   .hex img {
     width: 60px;
     height: 60px;
   }
   .hex.book-now {
-    background: #e74c3c;
+    background: linear-gradient(120deg, #e74c3c 60%, #c0392b 100%);
     color: #fff;
     align-items: flex-end;
     justify-content: center;
+    box-shadow: 0 2px 12px rgba(231,76,60,0.15);
   }
   .hex.book-now button {
     background: #fff;
@@ -169,6 +183,12 @@ body, html {
     border: none;
     cursor: pointer;
     margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s, color 0.2s;
+  }
+  .hex.book-now button:hover {
+    background: #e74c3c;
+    color: #fff;
   }
   .center-hex {
     background: #fff;
@@ -176,7 +196,7 @@ body, html {
   }
   
   .about {
-    background: rgba(255,255,255,0.95);
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
     padding: 40px 0 20px 0;
     text-align: center;
   }
@@ -212,6 +232,8 @@ body, html {
   .barbers {
     padding: 40px 0 20px 0;
     text-align: center;
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    color: #fff;
   }
   .barbers h2 {
     font-size: 1.5em;
@@ -225,13 +247,19 @@ body, html {
     margin-bottom: 20px;
   }
   .barber-card {
-    background: #fff;
+    background: #2c2c2c;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
     width: 160px;
     padding: 16px 8px 8px 8px;
     position: relative;
     text-align: center;
+    color: #fff;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .barber-card:hover {
+    box-shadow: 0 6px 24px rgba(231,76,60,0.15);
+    transform: translateY(-4px) scale(1.04);
   }
   .barber-card img {
     width: 80px;
@@ -247,8 +275,8 @@ body, html {
   }
   
   .contact {
-    background: #222;
-    color: #fff;
+    background: linear-gradient(135deg, #e8eaf6 0%, #f8fafc 100%);
+    color: #222;
     padding: 40px 0 20px 0;
     text-align: center;
   }
@@ -264,7 +292,7 @@ body, html {
     margin-bottom: 20px;
   }
   .contact-form {
-    background: rgba(0,0,0,0.7);
+    background: rgba(255,255,255,0.95);
     padding: 24px 18px;
     border-radius: 10px;
     min-width: 220px;
@@ -272,19 +300,34 @@ body, html {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
   }
   .contact-form h3 {
     font-size: 1.1em;
     margin-bottom: 10px;
   }
   .contact-form input {
-    padding: 8px;
-    border: none;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
     border-radius: 5px;
     margin-bottom: 6px;
+    font-size: 1em;
   }
   .contact-form button {
     margin-top: 8px;
+    background: linear-gradient(120deg, #e74c3c 60%, #c0392b 100%);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s, color 0.2s;
+  }
+  .contact-form button:hover {
+    background: #fff;
+    color: #e74c3c;
   }
   .contact-map img {
     width: 260px;
@@ -300,13 +343,14 @@ body, html {
   footer {
     text-align: center;
     padding: 30px 0 20px 0;
-    background: none;
-    color: #888;
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+    color: #fff;
     font-size: 1.2em;
   }
   .footer-icon img {
     width: 40px;
     margin-top: 10px;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.2));
   }
   
   @media (max-width: 900px) {
@@ -320,15 +364,40 @@ body, html {
   }
   
   @media (max-width: 600px) {
-    .header-avatars img, .center-avatar {
-      width: 80px !important;
+    .header-avatars img, .center-avatar, .avatar-img {
+      width: 60px !important;
+      height: 60px !important;
     }
-    .main-header h1 { font-size: 1.2em; }
-    .main-header h3 { font-size: 1em; }
-    .hero-logo img { width: 100px; }
-    .hex { width: 80px; height: 70px; font-size: 0.8em; }
-    .about-gallery { grid-template-columns: repeat(2, 60px); }
-    .barber-card { width: 110px; }
-    .barber-card img { width: 50px; height: 50px; }
-    .contact-map img { width: 180px; }
+    .main-header h1 { font-size: 1em; }
+    .main-header h3 { font-size: 0.9em; }
+    .hero-logo img { width: 70px; }
+    .hex { width: 60px; height: 50px; font-size: 0.7em; }
+    .hex img { width: 28px !important; height: 28px !important; }
+    .about-gallery { grid-template-columns: repeat(2, 40px); }
+    .about-gallery img { border-radius: 6px; }
+    .barber-card { width: 90px; padding: 8px 4px 4px 4px; }
+    .barber-card img, .barber-card .avatar-img { width: 36px; height: 36px; }
+    .contact-map img { width: 120px; }
+    .red-btn, .contact-form button { padding: 10px 10px; font-size: 0.9em; border-radius: 20px; }
+    .contact-form input { font-size: 1em; padding: 10px; }
+    .services, .about, .barbers, .contact { padding: 20px 0 10px 0; }
+    .main-nav ul { gap: 10px; font-size: 0.9em; }
+    .main-nav .nav-contacts { font-size: 0.8em; }
+    .footer-icon img { width: 28px; }
+    .hex-grid, .barber-list {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      gap: 10px;
+    }
+    .hex-grid::-webkit-scrollbar, .barber-list::-webkit-scrollbar { display: none; }
+  }
+
+  .avatar-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
